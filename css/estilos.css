@@ -43,15 +43,12 @@ h1 {
 .aprobada {
   background-color: #a8e6a3;
 }
-
 .regularizada {
   background-color: #cce7ff;
 }
-
 .habilitada {
   background-color: #fff4c2;
 }
-
 .bloqueada {
   background-color: #ffb1b1;
 }
@@ -71,4 +68,45 @@ h1 {
   text-align: center;
   font-weight: bold;
   color: #333;
+}
+
+/* 🎉 ESTILOS DEL MODAL (popup) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  animation: aparecer 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
 }
