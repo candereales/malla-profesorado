@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Educación Inicial</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <h1>Malla Interactiva<br>Profesorado en Educación Inicial (UNLPam)</h1>
+
+  <div class="grid">
+    <!-- 1er año -->
+    <div class="titulo-anio">1.º año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Filosofía')">Filosofía</div>
+    <div class="materia" onclick="mostrarInfo('Pedagogía')">Pedagogía</div>
+    <div class="materia" onclick="mostrarInfo('Sociología')">Sociología</div>
+
+    <div class="titulo-anio">1.º año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Psicología')">Psicología</div>
+    <div class="materia" onclick="mostrarInfo('Antropología')">Antropología</div>
+    <div class="materia" onclick="mostrarInfo('Práctica I')">Práctica I</div>
+
+    <!-- 2do año -->
+    <div class="titulo-anio">2.º año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Psicología del Aprendizaje')">Psicología del Aprendizaje</div>
+    <div class="materia" onclick="mostrarInfo('Historia de la Educación')">Historia de la Educación</div>
+    <div class="materia" onclick="mostrarInfo('Infancias, Familias y Contextos')">Infancias, Familias y Contextos</div>
+
+    <div class="titulo-anio">2.º año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Didáctica General')">Didáctica General</div>
+    <div class="materia" onclick="mostrarInfo('Organización y Administración Educacional')">Organización y Administración Educacional</div>
+    <div class="materia" onclick="mostrarInfo('Educación Especial')">Educación Especial</div>
+    <div class="materia" onclick="mostrarInfo('Práctica II')">Práctica II</div>
+
+    <!-- 3er año -->
+    <div class="titulo-anio">3.º año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Lenguaje Visual y su Didáctica')">Lenguaje Visual y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Ciencias Naturales y su Didáctica')">Ciencias Naturales y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Lengua y su Didáctica')">Lengua y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Didáctica de Educación Inicial')">Didáctica de Educación Inicial</div>
+    <div class="materia" onclick="mostrarInfo('Práctica III')">Práctica III</div>
+
+    <div class="titulo-anio">3.º año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Ciencias Sociales y su Didáctica')">Ciencias Sociales y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Matemática y su Didáctica')">Matemática y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Música y Expresión Corporal y su Didáctica')">Música y Expresión Corporal y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Literatura y su Didáctica')">Literatura y su Didáctica</div>
+    <div class="materia" onclick="mostrarInfo('Práctica IV')">Práctica IV</div>
+
+    <!-- 4to año -->
+    <div class="titulo-anio">4.º año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Política Educacional y Legislación Escolar')">Política Educacional y Legislación Escolar</div>
+    <div class="materia" onclick="mostrarInfo('Proyectos Educativos y Socio-Comunitarios')">Proyectos Educativos y Socio-Comunitarios</div>
+    <div class="materia" onclick="mostrarInfo('Educación Física en la Educación Inicial')">Educación Física en la Educación Inicial</div>
+    <div class="materia" onclick="mostrarInfo('Residencia I')">Residencia I</div>
+    <div class="materia" onclick="mostrarInfo('Educación Sexual Integral')">Educación Sexual Integral</div>
+    <div class="materia" onclick="mostrarInfo('Diseño de Material Didáctico')">Diseño de Material Didáctico</div>
+    <div class="materia" onclick="mostrarInfo('Educación Ambiental y Desarrollo Sostenible')">Educación Ambiental y Desarrollo Sostenible</div>
+
+    <div class="titulo-anio">4.º año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Seminario de Derechos Humanos')">Seminario de Derechos Humanos</div>
+    <div class="materia" onclick="mostrarInfo('Educación para la Salud')">Educación para la Salud</div>
+    <div class="materia" onclick="mostrarInfo('Tecnología Educativa')">Tecnología Educativa</div>
+    <div class="materia" onclick="mostrarInfo('Residencia II')">Residencia II</div>
+  </div>
+
+  <div id="infoMateria" class="info"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
