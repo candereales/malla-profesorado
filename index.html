@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva - Educación Inicial</title>
+  <title>Malla Interactiva - UNLPam</title>
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="grid">
-    <!-- 1er Año -->
+    <!-- 1.º Año -->
     <div class="titulo-anio">1.º Año - 1.º cuatrimestre</div>
     <div class="materia regularizada" onclick="mostrarInfo('Filosofía', '', '')">Filosofía</div>
     <div class="materia regularizada" onclick="mostrarInfo('Pedagogía', '', '')">Pedagogía</div>
@@ -28,46 +28,21 @@
     <div class="materia aprobada" onclick="mostrarInfo('Antropología', '', '')">Antropología</div>
     <div class="materia aprobada" onclick="mostrarInfo('Práctica I', '', '')">Práctica I</div>
 
-    <!-- 2do Año -->
+    <!-- 2.º Año - 1.º cuatrimestre -->
     <div class="titulo-anio">2.º Año - 1.º cuatrimestre</div>
     <div class="materia habilitada" onclick="mostrarInfo('Psicología del Aprendizaje', 'Psicología', 'Psicología')">Psicología del Aprendizaje</div>
     <div class="materia habilitada" onclick="mostrarInfo('Historia de la Educación', 'Pedagogía', 'Pedagogía')">Historia de la Educación</div>
     <div class="materia habilitada" onclick="mostrarInfo('Infancias, Familias y Contextos', 'Práctica I', '')">Infancias, Familias y Contextos</div>
-
-    <div class="titulo-anio">2.º Año - 2.º cuatrimestre</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Didáctica General', 'Pedagogía', '')">Didáctica General</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Organización y Administración Educacional', 'Pedagogía', '')">Organización y Administración Educacional</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Educación Especial', 'Pedagogía', '')">Educación Especial</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Práctica II', 'Práctica I', '')">Práctica II</div>
-
-    <!-- 3er Año -->
-    <div class="titulo-anio">3.º Año - 1.º cuatrimestre</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Lenguaje Visual y su Didáctica', 'Didáctica General', '')">Lenguaje Visual y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Ciencias Naturales y su Didáctica', 'Didáctica General', '')">Ciencias Naturales y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Lengua y su Didáctica', 'Didáctica General', '')">Lengua y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Didáctica de Educación Inicial', 'Práctica II', '')">Didáctica de Educación Inicial</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Práctica III', 'Práctica II', '')">Práctica III</div>
-
-    <div class="titulo-anio">3.º Año - 2.º cuatrimestre</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Ciencias Sociales y su Didáctica', 'Didáctica General', '')">Ciencias Sociales y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Matemática y su Didáctica', 'Didáctica General', '')">Matemática y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Música y Expresión Corporal y su Didáctica', 'Didáctica General', '')">Música y Expresión Corporal y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Literatura y su Didáctica', 'Lengua y su Didáctica', '')">Literatura y su Didáctica</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Práctica IV', 'Práctica III', '')">Práctica IV</div>
-
-    <!-- 4to Año -->
-    <div class="titulo-anio">4.º Año</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Política Educacional y Legislación Escolar', 'Organización y Administración Educacional', '')">Política Educacional y Legislación Escolar</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Proyectos Educativos y Socio-Comunitarios', 'Práctica IV', '')">Proyectos Educativos y Socio-Comunitarios</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Educación Física en la Educación Inicial', '', '')">Educación Física en la Educación Inicial</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Residencia I', 'Práctica IV', '')">Residencia I</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Seminario de Derechos Humanos', '', '')">Seminario de Derechos Humanos</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Educación para la Salud', '', '')">Educación para la Salud</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Tecnología Educativa', '', '')">Tecnología Educativa</div>
-    <div class="materia bloqueada" onclick="mostrarInfo('Residencia II', 'Residencia I', '')">Residencia II</div>
   </div>
 
-  <div id="infoMateria" class="info"></div>
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <div id="modal-texto"></div>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
