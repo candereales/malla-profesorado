@@ -1,11 +1,12 @@
 function mostrarInfo(nombre, correlativasRegularizar, correlativasAprobar) {
-  let texto = `📚 ${nombre}`;
-  if (correlativasRegularizar || correlativasAprobar) {
-    texto += `<br><br>📘 Para CURSAR: ${correlativasRegularizar || 'ninguna'}`;
-    texto += `<br>✅ Para APROBAR: ${correlativasAprobar || 'ninguna'}`;
-  } else {
-    texto += `<br><br>✅ No tiene correlativas.`;
-  }
+  let texto = `<h2>${nombre}</h2>`;
+  texto += `<p>📘 <strong>Para cursar:</strong> ${correlativasRegularizar || 'Ninguna'}</p>`;
+  texto += `<p>✅ <strong>Para aprobar:</strong> ${correlativasAprobar || 'Ninguna'}</p>`;
 
-  document.getElementById('infoMateria').innerHTML = texto;
+  document.getElementById("modal-texto").innerHTML = texto;
+  document.getElementById("modal").style.display = "block";
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
 }
