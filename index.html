@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva - UNLPam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Profesorado Inicial</title>
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
@@ -12,27 +12,73 @@
   <div class="leyenda">
     <span class="aprobada">🟢 Aprobada</span>
     <span class="regularizada">📘 Regularizada</span>
-    <span class="habilitada">🟡 Podés cursar</span>
+    <span class="promocionada">💯 Promocionada</span>
+    <span class="con-final">📕 Con Final</span>
+    <span class="habilitada">🟡 Para Cursar</span>
     <span class="bloqueada">🔴 Bloqueada</span>
   </div>
 
   <div class="grid">
-    <!-- 1.º Año -->
+    <!-- 1.º Año - 1.º Cuatrimestre -->
     <div class="titulo-anio">1.º Año - 1.º cuatrimestre</div>
-    <div class="materia regularizada" onclick="mostrarInfo('Filosofía', '', '')">Filosofía</div>
-    <div class="materia regularizada" onclick="mostrarInfo('Pedagogía', '', '')">Pedagogía</div>
-    <div class="materia regularizada" onclick="mostrarInfo('Sociología', '', '')">Sociología</div>
+    <div class="materia" onclick="mostrarInfo('Filosofía', '', '')"><strong>Filosofía</strong><br>📘 Regularizada</div>
+    <div class="materia" onclick="mostrarInfo('Pedagogía', '', '')"><strong>Pedagogía</strong><br>📘 Regularizada</div>
+    <div class="materia" onclick="mostrarInfo('Sociología', '', '')"><strong>Sociología</strong><br>📘 Regularizada</div>
 
+    <!-- 1.º Año - 2.º Cuatrimestre -->
     <div class="titulo-anio">1.º Año - 2.º cuatrimestre</div>
-    <div class="materia regularizada" onclick="mostrarInfo('Psicología', '', '')">Psicología</div>
-    <div class="materia aprobada" onclick="mostrarInfo('Antropología', '', '')">Antropología</div>
-    <div class="materia aprobada" onclick="mostrarInfo('Práctica I', '', '')">Práctica I</div>
+    <div class="materia" onclick="mostrarInfo('Psicología', '', '')"><strong>Psicología</strong><br>📘 Regularizada</div>
+    <div class="materia" onclick="mostrarInfo('Antropología', '', '')"><strong>Antropología</strong><br>🟢 Aprobada</div>
+    <div class="materia" onclick="mostrarInfo('Práctica I', '', '')"><strong>Práctica I</strong><br>🟢 Aprobada</div>
 
-    <!-- 2.º Año - 1.º cuatrimestre -->
+    <!-- 2.º Año - 1.º Cuatrimestre -->
     <div class="titulo-anio">2.º Año - 1.º cuatrimestre</div>
-    <div class="materia habilitada" onclick="mostrarInfo('Psicología del Aprendizaje', 'Psicología', 'Psicología')">Psicología del Aprendizaje</div>
-    <div class="materia habilitada" onclick="mostrarInfo('Historia de la Educación', 'Pedagogía', 'Pedagogía')">Historia de la Educación</div>
-    <div class="materia habilitada" onclick="mostrarInfo('Infancias, Familias y Contextos', 'Práctica I', '')">Infancias, Familias y Contextos</div>
+    <div class="materia" onclick="mostrarInfo('Psicología del Aprendizaje', 'Psicología', '')"><strong>Psicología del Aprendizaje</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Historia de la Educación', 'Pedagogía', '')"><strong>Historia de la Educación</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Infancias, Familias y Contextos', 'Práctica I', '')"><strong>Infancias, Familias y Contextos</strong><br></div>
+
+    <!-- 2.º Año - 2.º Cuatrimestre -->
+    <div class="titulo-anio">2.º Año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Didáctica General', 'Pedagogía', '')"><strong>Didáctica General</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Organización y Administración Educacional', 'Pedagogía', '')"><strong>Organización y Administración Educacional</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Educación Especial', '', '')"><strong>Educación Especial</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Práctica II', 'Práctica I, Didáctica General', '')"><strong>Práctica II</strong><br></div>
+
+    <!-- 3.º Año - 1.º Cuatrimestre -->
+    <div class="titulo-anio">3.º Año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Lenguaje Visual y su Didáctica', '', '')"><strong>Lenguaje Visual y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Ciencias Naturales y su Didáctica', '', '')"><strong>Ciencias Naturales y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Lengua y su Didáctica', '', '')"><strong>Lengua y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Didáctica de la Educación Inicial', 'Didáctica General', '')"><strong>Didáctica de la Educación Inicial</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Práctica III', 'Práctica II', '')"><strong>Práctica III</strong><br></div>
+
+    <!-- 3.º Año - 2.º Cuatrimestre -->
+    <div class="titulo-anio">3.º Año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Ciencias Sociales y su Didáctica', '', '')"><strong>Ciencias Sociales y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Matemática y su Didáctica', '', '')"><strong>Matemática y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Música y Expresión Corporal y su Didáctica', '', '')"><strong>Música y Expresión Corporal y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Literatura y su Didáctica', '', '')"><strong>Literatura y su Didáctica</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Práctica IV', 'Práctica III', '')"><strong>Práctica IV</strong><br></div>
+
+    <!-- 4.º Año - 1.º Cuatrimestre -->
+    <div class="titulo-anio">4.º Año - 1.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Política Educacional y Legislación Escolar', '', '')"><strong>Política Educacional y Legislación Escolar</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Proyectos Educativos y Socio-Comunitarios', '', '')"><strong>Proyectos Educativos y Socio-Comunitarios</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Educación Física en la Educación Inicial', '', '')"><strong>Educación Física en la Educación Inicial</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Residencia I', 'Práctica IV', '')"><strong>Residencia I</strong><br></div>
+
+    <!-- 4.º Año - 2.º Cuatrimestre -->
+    <div class="titulo-anio">4.º Año - 2.º cuatrimestre</div>
+    <div class="materia" onclick="mostrarInfo('Seminario de Derechos Humanos', '', '')"><strong>Seminario de Derechos Humanos</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Educación para la Salud', '', '')"><strong>Educación para la Salud</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Tecnología Educativa', '', '')"><strong>Tecnología Educativa</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Residencia II', 'Residencia I', '')"><strong>Residencia II</strong><br></div>
+
+    <!-- Optativas -->
+    <div class="titulo-anio">4.º Año - Optativas</div>
+    <div class="materia" onclick="mostrarInfo('ESI - Educación Sexual Integral', '', '')"><strong>Educación Sexual Integral</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Taller de Diseño y Elaboración de Material Didáctico', '', '')"><strong>Diseño y Elaboración de Material Didáctico</strong><br></div>
+    <div class="materia" onclick="mostrarInfo('Educación Ambiental y Desarrollo Sostenible', '', '')"><strong>Educación Ambiental y Desarrollo Sostenible</strong><br></div>
   </div>
 
   <!-- MODAL -->
